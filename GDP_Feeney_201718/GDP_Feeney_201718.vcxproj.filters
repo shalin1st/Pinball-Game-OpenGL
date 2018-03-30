@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f243418e-16fc-4d11-949d-086e84d49eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{5b036a86-ffcf-40b2-8016-60d37a7ba79e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Persist">
+      <UniqueIdentifier>{df010c60-dbde-4437-9d1b-331dc08f3541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Persist\SQLite">
+      <UniqueIdentifier>{3c72da47-c08e-4f96-b212-44cb9c3dece2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{01d1d4e8-0461-4272-a1e0-9f560d40d1dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugRenderer">
+      <UniqueIdentifier>{33773904-c3d0-492e-887a-5420aafdbedb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics_AABB">
+      <UniqueIdentifier>{c3cf21fe-5767-4fbc-8cac-fbcec8c72ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{9719379f-c4c7-4c03-9fd4-bd92ed1191ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\PlyLoader">
+      <UniqueIdentifier>{e09b5a02-f893-42b3-b295-cb29c4d9deac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Persist\JSON">
+      <UniqueIdentifier>{133aa164-9ca9-491b-b0e6-573056f1746d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{c2e73f13-01c1-48bc-be70-ab36e07d5316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{f83183ec-fc9a-4006-81f2-313041ab1733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene and Game Managers">
+      <UniqueIdentifier>{a88a3da5-d048-4e42-84f8-57a639bbacae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{f8ba1d80-0de6-47a3-8cb6-03aad50b30c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{33a4e1b8-cf7f-456a-b56a-e498d995c21d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderManager">
+      <UniqueIdentifier>{22c2bff5-161a-4fad-b75a-8e4277fdf10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Error">
+      <UniqueIdentifier>{1dc855b8-96b2-4b10-9cb9-efafc30e11d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Persist\NVPair">
+      <UniqueIdentifier>{9c4b7c66-dc39-47c3-a807-288823e06f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Persist\RnRXML">
+      <UniqueIdentifier>{63366a6c-f06b-48a4-a6f6-ed5eff2a963d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Texture">
+      <UniqueIdentifier>{5be69afd-2a1f-4fbd-95d3-db710b5e0b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{eef0b455-027b-4e49-b5e8-4ad04b20d5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\AssimpFBX">
+      <UniqueIdentifier>{7a2cb125-e094-4674-bff7-9001b900efd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameBuffer">
+      <UniqueIdentifier>{f53cefaa-2995-456e-83b8-dee70ebd56fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DebugShaders">
+      <UniqueIdentifier>{a4ac88a9-9b10-46d3-8119-6baff51e36cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gem_Threaded_Dalek">
+      <UniqueIdentifier>{b3676d12-76a6-44db-b834-c749a1844806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gem_Threaded_Dalek\Solution_01">
+      <UniqueIdentifier>{2e0d0283-f979-4524-a720-a1bd85500940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gem_Threaded_Dalek\Solution_02">
+      <UniqueIdentifier>{23f60539-5027-4cfb-abd0-41f835abefb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gem_Threaded_Dalek\Solution_03">
+      <UniqueIdentifier>{7d65d645-deda-4343-9856-dca62883d93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{6edc1eae-4cdb-46a5-8a92-74b9b61ba56e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TheMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cVAOMeshManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cLightManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLFW_keyboardCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\C24BitBMPpixel.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\CTextureFromBMP.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="cBasicTextureManager_FreeImage.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\cPersist.cpp">
+      <Filter>Persist</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\cPersistImpFactory.cpp">
+      <Filter>Persist</Filter>
+    </ClCompile>
+    <ClCompile Include="cCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="cDebugRenderer.cpp">
+      <Filter>DebugRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Physics.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\cAABBBroadPhase.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\cAABBv2.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\AABB_triangles.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelUtilities.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLoader.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Ply\CPlyFile5nt.cpp">
+      <Filter>Models\PlyLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Ply\CPlyFile5nt_experimental.cpp">
+      <Filter>Models\PlyLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Ply\CVector3f.cpp">
+      <Filter>Models\PlyLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="CHRTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cCamera_Follow.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\cPhysicalProperties.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\cMathHelper.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="cGameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\cPhysicsWorld.cpp">
+      <Filter>Physics_AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\cLuaBrain.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="cMesh.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="sMeshDrawInfo.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="cDebugRenderer_BuiltInShapes.cpp">
+      <Filter>DebugRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Render_Calls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cShader.cpp">
+      <Filter>ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cShaderManager.cpp">
+      <Filter>ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Error\CErrorLog.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="Error\COpenGLError.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\CTextureManager.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\cBasicTextureManager_OLD_DONT_INCLUDE.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\JSON\cPersistImpRnRJSON.cpp">
+      <Filter>Persist\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\SQLite\cPersistImpSQLiteGDPAdapter.cpp">
+      <Filter>Persist\SQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\CStringUtils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\CNVPair.cpp">
+      <Filter>Persist\NVPair</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\RnRXML\wRnRXML.cpp">
+      <Filter>Persist\RnRXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Persist\RnRXML\RnRXML.cpp">
+      <Filter>Persist\RnRXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\CStringHelper.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="cCamera_Manual.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="cCamera_FlyLookAt.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="assimp\cAssimpBasic.cpp">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClCompile>
+    <ClCompile Include="assimp\cAssimpBasic_Imp.cpp">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClCompile>
+    <ClCompile Include="cFBO.cpp">
+      <Filter>FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="assimp\cSimpleAssimpSkinnedMeshLoader_OneMesh.cpp">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClCompile>
+    <ClCompile Include="cModelAssetLoader.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="cAnimationState.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="cDalek.cpp">
+      <Filter>Gem_Threaded_Dalek</Filter>
+    </ClCompile>
+    <ClCompile Include="DalekThreadedCommon.cpp">
+      <Filter>Gem_Threaded_Dalek</Filter>
+    </ClCompile>
+    <ClCompile Include="Dalek_Threaded_03.cpp">
+      <Filter>Gem_Threaded_Dalek\Solution_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Dalek_Threaded_02.cpp">
+      <Filter>Gem_Threaded_Dalek\Solution_02</Filter>
+    </ClCompile>
+    <ClCompile Include="cInputHandler.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cVAOMeshManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cLightManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globalGameStuff.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="globalOpenGL_GLFW.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="sVertex_xyz_rgba_n_uv2_bt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\C24BitBMPpixel.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\CTextureFromBMP.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\cPersist.h">
+      <Filter>Persist</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\iPersistImp.h">
+      <Filter>Persist</Filter>
+    </ClInclude>
+    <ClInclude Include="cCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="cDebugRenderer.h">
+      <Filter>DebugRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sVAOInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\AABB_triangles.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Physics.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\cAABBBroadPhase.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\cAABBv2.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="iDebugRenderer.h">
+      <Filter>DebugRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelUtilities.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Ply\CPlyFile5nt.h">
+      <Filter>Models\PlyLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Ply\CPlyInfo.h">
+      <Filter>Models\PlyLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Ply\CVector3f.h">
+      <Filter>Models\PlyLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="CHRTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cSceneManager.h">
+      <Filter>Scene and Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\cPhysicalProperties.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\iPhysicalObject.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\cMathHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="cGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\cPhysicsWorld.h">
+      <Filter>Physics_AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\cLuaBrain.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\cLuaConnector.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="cMesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="sMeshDrawInfo.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="sTextureBindBlendInfo.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="cShaderManager.h">
+      <Filter>ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\CTextureManager.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Error\CErrorLog.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Error\COpenGLError.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\CTexUnitInfoBrief.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\cBasicTextureManager_OLD_DONT_INCLUDE.h">
+      <Filter>Source Files\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\JSON\cRnRJASON.h">
+      <Filter>Persist\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\JSON\cPersistImpRnRJSON.h">
+      <Filter>Persist\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\SQLite\cPersistImpSQLiteGDPAdapter.h">
+      <Filter>Persist\SQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\CStringUtils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\CNVPair.h">
+      <Filter>Persist\NVPair</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\RnRXML\wRnRXML.h">
+      <Filter>Persist\RnRXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Persist\RnRXML\RnRXML.h">
+      <Filter>Persist\RnRXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\CStringHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\iInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cAssimpBasic.h">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cAssimpBasic_Imp.h">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClInclude>
+    <ClInclude Include="cFrameBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cFBO.h">
+      <Filter>FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cSimpleAssimpSkinnedMeshLoader_OneMesh.h">
+      <Filter>Models\AssimpFBX</Filter>
+    </ClInclude>
+    <ClInclude Include="sVertex_xyz_rgba_n_uv2_bt_4Bones.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cModelAssetLoader.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="cAnimationState.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="cDalek.h">
+      <Filter>Gem_Threaded_Dalek</Filter>
+    </ClInclude>
+    <ClInclude Include="iDalekManager.h">
+      <Filter>Gem_Threaded_Dalek</Filter>
+    </ClInclude>
+    <ClInclude Include="DalekThreadedCommon.h">
+      <Filter>Gem_Threaded_Dalek</Filter>
+    </ClInclude>
+    <ClInclude Include="Dalek_Threaded_03.h">
+      <Filter>Gem_Threaded_Dalek\Solution_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Dalek_Threaded_02.h">
+      <Filter>Gem_Threaded_Dalek\Solution_02</Filter>
+    </ClInclude>
+    <ClInclude Include="cInputHandler.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shaders\simpleVert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\simpleFrag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\simpleFragDeferred.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\debugFrag.glsl">
+      <Filter>Shaders\DebugShaders</Filter>
+    </None>
+    <None Include="assets\shaders\debugGeom.glsl">
+      <Filter>Shaders\DebugShaders</Filter>
+    </None>
+    <None Include="assets\shaders\debugGeom_PassThrough.glsl">
+      <Filter>Shaders\DebugShaders</Filter>
+    </None>
+    <None Include="assets\shaders\debugVert.glsl">
+      <Filter>Shaders\DebugShaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

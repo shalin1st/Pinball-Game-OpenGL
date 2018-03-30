@@ -1,0 +1,6 @@
+Game Config
+width 800
+height 600
+Title_Start
+Note the FBO size is set at start...
+Title_End

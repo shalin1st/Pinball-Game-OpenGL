@@ -1,0 +1,5 @@
+﻿  myPhysics.cpp
+e:\gdp\semester 2\physics2\project 2\library_multiple_projects\final_project1_library_multiple_projects\physics_2_project_1\firstopengl (32bit, day 8a)\myphysics\myphysics.cpp(102): warning C4018: '<': signed/unsigned mismatch
+e:\gdp\semester 2\physics2\project 2\library_multiple_projects\final_project1_library_multiple_projects\physics_2_project_1\firstopengl (32bit, day 8a)\myphysics\myphysics.cpp(109): warning C4018: '<': signed/unsigned mismatch
+e:\gdp\semester 2\physics2\project 2\library_multiple_projects\final_project1_library_multiple_projects\physics_2_project_1\firstopengl (32bit, day 8a)\myphysics\myphysics.cpp(214): warning C4018: '<': signed/unsigned mismatch
+  myPhysics.vcxproj -> E:\GDP\Semester 2\Physics2\Project 2\library_multiple_Projects\Final_Project1_Library_MUltiple_PRojects\Physics_2_Project_1\FirstOpenGL (32bit, Day 8a)\Debug\myPhysics.lib

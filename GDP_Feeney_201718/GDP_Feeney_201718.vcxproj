@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE09ACAF-B795-48B5-865F-B14DEE878C68}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FirstOpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>GDP_Feeney_201718</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);$(SourcePath)include;$(SolutionDir)include;$(SolutionDir)myBulletPhysics;$(SolutionDir)PhysicsInterface;$(SolutionDir)myPhysics;$(SolutionDir)myBulletPhysics\bullet</IncludePath>
+    <LibraryPath>$(SourcePath)lib\Debug;$(ExecutablePath);$(SolutionDir)$(Configuration);$(LibraryPath);$(OutDir);$(SolutionDir)lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);$(SourcePath)include;$(SolutionDir)include;$(SolutionDir)myBulletPhysics;$(SolutionDir)PhysicsInterface;$(SolutionDir)myPhysics;$(SolutionDir)myBulletPhysics\bullet</IncludePath>
+    <LibraryPath>$(SourcePath)lib\Debug64;$(ExecutablePath);$(LibraryPath);$(SolutionDir)$(Platform)\$(Configuration);$(OutDir);$(SolutionDir)lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);$(SourcePath)include;</IncludePath>
+    <LibraryPath>$(SourcePath)lib\Release;$(ExecutablePath);$(SolutionDir)$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SourcePath)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SourcePath)lib\Release64;$(LibraryPath);$(SolutionDir)$(Platform)\$(Configuration)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)myBulletPhysics\bullet</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>myPhysics.lib;myBulletPhysics.lib;glfw3.lib;lua5.3.3-static_32.lib;Persist_SQLiteGDPInterface.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)myBulletPhysics\bullet</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>myPhysics.lib;myBulletPhysics.lib;glfw3_64.lib;lua5.3.3-static_64.lib;Persist_SQLiteGDPInterface.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;lua5.3.3-static_32.lib;Persist_SQLiteGDPInterface.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3_64.lib;lua5.3.3-static_64.lib;Persist_SQLiteGDPInterface.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="assimp\cAssimpBasic.cpp" />
+    <ClCompile Include="assimp\cAssimpBasic_Imp.cpp" />
+    <ClCompile Include="assimp\cSimpleAssimpSkinnedMeshLoader_OneMesh.cpp" />
+    <ClCompile Include="cAnimationState.cpp" />
+    <ClCompile Include="cBasicTextureManager_FreeImage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cCamera.cpp" />
+    <ClCompile Include="cCamera_FlyLookAt.cpp" />
+    <ClCompile Include="cCamera_Follow.cpp" />
+    <ClCompile Include="cCamera_Manual.cpp" />
+    <ClCompile Include="cDalek.cpp" />
+    <ClCompile Include="cInputHandler.cpp" />
+    <ClCompile Include="DalekThreadedCommon.cpp" />
+    <ClCompile Include="Dalek_Threaded_02.cpp" />
+    <ClCompile Include="cDebugRenderer.cpp" />
+    <ClCompile Include="cDebugRenderer_BuiltInShapes.cpp" />
+    <ClCompile Include="cFBO.cpp" />
+    <ClCompile Include="cGameObject.cpp" />
+    <ClCompile Include="CHRTimer.cpp" />
+    <ClCompile Include="cLightManager.cpp" />
+    <ClCompile Include="cMesh.cpp" />
+    <ClCompile Include="cModelAssetLoader.cpp" />
+    <ClCompile Include="cShader.cpp" />
+    <ClCompile Include="cShaderManager.cpp" />
+    <ClCompile Include="cTriangle.cpp" />
+    <ClCompile Include="cVAOMeshManager.cpp" />
+    <ClCompile Include="Dalek_Threaded_03.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Error\CErrorLog.cpp" />
+    <ClCompile Include="Error\COpenGLError.cpp" />
+    <ClCompile Include="GLFW_keyboardCallback.cpp" />
+    <ClCompile Include="Lua\cLuaBrain.cpp" />
+    <ClCompile Include="ModelUtilities.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Persist\CNVPair.cpp" />
+    <ClCompile Include="Persist\cPersist.cpp" />
+    <ClCompile Include="Persist\cPersistImpFactory.cpp" />
+    <ClCompile Include="Persist\JSON\cPersistImpRnRJSON.cpp" />
+    <ClCompile Include="Persist\RnRXML\RnRXML.cpp" />
+    <ClCompile Include="Persist\RnRXML\wRnRXML.cpp" />
+    <ClCompile Include="Persist\SQLite\cPersistImpSQLiteGDPAdapter.cpp" />
+    <ClCompile Include="Physics\AABB_triangles.cpp" />
+    <ClCompile Include="Physics\cAABBBroadPhase.cpp" />
+    <ClCompile Include="Physics\cAABBv2.cpp" />
+    <ClCompile Include="Physics\cPhysicalProperties.cpp" />
+    <ClCompile Include="Physics\cPhysicsWorld.cpp" />
+    <ClCompile Include="Physics\Physics.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Ply\CPlyFile5nt.cpp" />
+    <ClCompile Include="Ply\CPlyFile5nt_experimental.cpp" />
+    <ClCompile Include="Ply\CVector3f.cpp" />
+    <ClCompile Include="Render_Calls.cpp" />
+    <ClCompile Include="SceneLoader.cpp" />
+    <ClCompile Include="sMeshDrawInfo.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="Texture\C24BitBMPpixel.cpp" />
+    <ClCompile Include="Texture\cBasicTextureManager_OLD_DONT_INCLUDE.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Texture\CTextureFromBMP.cpp" />
+    <ClCompile Include="Texture\CTextureManager.cpp" />
+    <ClCompile Include="TheMain.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="Utilities\cMathHelper.cpp" />
+    <ClCompile Include="Utilities\CStringHelper.cpp" />
+    <ClCompile Include="Utilities\CStringUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="assimp\cAssimpBasic.h" />
+    <ClInclude Include="assimp\cAssimpBasic_Imp.h" />
+    <ClInclude Include="assimp\cSimpleAssimpSkinnedMeshLoader_OneMesh.h" />
+    <ClInclude Include="cCamera.h" />
+    <ClInclude Include="cDalek.h" />
+    <ClInclude Include="cDebugRenderer.h" />
+    <ClInclude Include="cFBO.h" />
+    <ClInclude Include="cFrameBuffer.h" />
+    <ClInclude Include="cGameObject.h" />
+    <ClInclude Include="CHRTimer.h" />
+    <ClInclude Include="cAnimationState.h" />
+    <ClInclude Include="cInputHandler.h" />
+    <ClInclude Include="cLightManager.h" />
+    <ClInclude Include="cMesh.h" />
+    <ClInclude Include="cModelAssetLoader.h" />
+    <ClInclude Include="cSceneManager.h" />
+    <ClInclude Include="cShaderManager.h" />
+    <ClInclude Include="cTriangle.h" />
+    <ClInclude Include="cVAOMeshManager.h" />
+    <ClInclude Include="DalekThreadedCommon.h" />
+    <ClInclude Include="Dalek_Threaded_03.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dalek_Threaded_02.h" />
+    <ClInclude Include="Error\CErrorLog.h" />
+    <ClInclude Include="Error\COpenGLError.h" />
+    <ClInclude Include="iDalekManager.h" />
+    <ClInclude Include="iDebugRenderer.h" />
+    <ClInclude Include="Input\iInput.h" />
+    <ClInclude Include="Lua\cLuaBrain.h" />
+    <ClInclude Include="Lua\cLuaConnector.h" />
+    <ClInclude Include="Persist\CNVPair.h" />
+    <ClInclude Include="Persist\cPersist.h" />
+    <ClInclude Include="Persist\iPersistImp.h" />
+    <ClInclude Include="Persist\JSON\cPersistImpRnRJSON.h" />
+    <ClInclude Include="Persist\JSON\cRnRJASON.h" />
+    <ClInclude Include="Persist\RnRXML\RnRXML.h" />
+    <ClInclude Include="Persist\RnRXML\wRnRXML.h" />
+    <ClInclude Include="Persist\SQLite\cPersistImpSQLiteGDPAdapter.h" />
+    <ClInclude Include="Physics\AABB_triangles.h" />
+    <ClInclude Include="Physics\cAABBBroadPhase.h" />
+    <ClInclude Include="Physics\cAABBv2.h" />
+    <ClInclude Include="Physics\cPhysicalProperties.h" />
+    <ClInclude Include="Physics\cPhysicsWorld.h" />
+    <ClInclude Include="Physics\iPhysicalObject.h" />
+    <ClInclude Include="Physics\Physics.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Ply\CPlyFile5nt.h" />
+    <ClInclude Include="Ply\CPlyInfo.h" />
+    <ClInclude Include="Ply\CVector3f.h" />
+    <ClInclude Include="sMeshDrawInfo.h" />
+    <ClInclude Include="sTextureBindBlendInfo.h" />
+    <ClInclude Include="sVAOInfo.h" />
+    <ClInclude Include="sVertex_xyz_rgba_n_uv2_bt.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="globalGameStuff.h" />
+    <ClInclude Include="globalOpenGL_GLFW.h" />
+    <ClInclude Include="ModelUtilities.h" />
+    <ClInclude Include="sVertex_xyz_rgba_n_uv2_bt_4Bones.h" />
+    <ClInclude Include="Texture\C24BitBMPpixel.h" />
+    <ClInclude Include="Texture\cBasicTextureManager_OLD_DONT_INCLUDE.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Texture\CTextureFromBMP.h" />
+    <ClInclude Include="Texture\CTextureManager.h" />
+    <ClInclude Include="Texture\CTexUnitInfoBrief.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Utilities\cMathHelper.h" />
+    <ClInclude Include="Utilities\CStringHelper.h" />
+    <ClInclude Include="Utilities\CStringUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shaders\debugFrag.glsl" />
+    <None Include="assets\shaders\debugGeom.glsl" />
+    <None Include="assets\shaders\debugGeom_PassThrough.glsl" />
+    <None Include="assets\shaders\debugVert.glsl" />
+    <None Include="assets\shaders\simpleFrag.glsl" />
+    <None Include="assets\shaders\simpleFragDeferred.glsl" />
+    <None Include="assets\shaders\simpleVert.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
